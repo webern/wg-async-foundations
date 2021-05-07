@@ -1,4 +1,4 @@
-# 😱 Status quo stories: Bottlerocket Canary Hangs
+# 😱 Status quo stories: Alan Creates a Hanging Alarm
 
 ## 🚧 Warning: Draft status 🚧
 
@@ -10,6 +10,7 @@ If you would like to expand on this story, or adjust the answers to the FAQ, fee
 
 [Bottlerocket] is a Linux-based open-source operating system that is purpose-built by Amazon Web Services for running containers.
 We use our own program [pubsys] to ensure that Bottlerocket update repositories are healthy.
+[Alan] is a developer on the project.
 
 ### The TL;DR
 
@@ -106,7 +107,10 @@ Bottlerocket is a real-life project that experienced these real-life challenges!
 TODO - pick a character and re-write to fit the mold?
 
 ### **How would this story have played out differently for the other characters?**
-TODO - figure this out if it is required.
+
+- [Barbara] would not have made this mistake given her experience.
+- [Grace] could have made the same mistakes since this issue is very specific to the Rust ecosystem.
+- [Niklaus] could have easily made this mistake and might also have had a hard time understanding anything about the runtime.
 
 [character]: ../characters.md
 [status quo stories]: ./status_quo.md
