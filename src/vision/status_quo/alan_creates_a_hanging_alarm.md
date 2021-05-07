@@ -37,7 +37,10 @@ The root cause was having multiple tokio runtimes, though we don't know what cha
 The fix was to eliminate the need for a tokio runtime in the pubsys code path by doing the parallel downloads in a different way
 (first with [threads] for a quick fix, then with a [thread pool]).
 
-### Multiple Tokio Major Versions
+[Alan] is surprised and sad since he thought the compiler would help him write safe code.
+Instead the compiler was ignorant of his misuse of the de-facto standard Rust async runtime.
+
+### Addendum: Multiple Tokio Major Versions
 
 Updating to tokio v1 was a challenge for Bottlerocket because:
 - Having two major versions of the tokio runtime can/will cause problems.
